@@ -37,11 +37,9 @@ function Header() {
             role="button"
             className="btn btn-ghost btn-circle avatar hover:bg-transparent"
           >
-            <div className="w-8 rounded-full">
-              <img
-                alt="Tailwind CSS Navbar component"
-                src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-              />
+            <div className="w-8 rounded-full skeleton ">
+              {/* Imag */}
+
             </div>
           </div>
           <ul
