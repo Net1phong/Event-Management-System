@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <div className="navbar">
+    <div className="navbar fixed top-0 inset-x-0 z-[100]">
       <div className="flex-1">
         <label
           htmlFor="my-drawer-3"
@@ -16,8 +16,8 @@ function Header() {
           <Image
             className="active:scale-95 transition-all duration-150 cursor-pointer"
             src="/Title.svg"
-            width={80}
-            height={80}
+            width={70}
+            height={70}
             alt="Logo"
           />
         </Link>

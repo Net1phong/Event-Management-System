@@ -22,7 +22,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${mulish.variable} bg-custom-gradient min-h-screen`}>
+      <body className={`${mulish.variable} bg-custom-gradient min-h-screen pt-20`}>
         <Drawer>{children}</Drawer>
       </body>
     </html>
