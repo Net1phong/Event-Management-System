@@ -1,4 +1,5 @@
-import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 function Header() {
   return (
@@ -7,26 +8,36 @@ function Header() {
         <label
           htmlFor="my-drawer-3"
           aria-label="open sidebar"
-          className="btn btn-square btn-ghost"
+          className="btn btn-square btn-ghost hover:bg-transparent"
         >
           <i className="fa-solid fa-bars fa-xl"></i>
         </label>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <Link href="/">
+          <Image
+            className="active:scale-95 transition-all duration-150 cursor-pointer"
+            src="/Title.svg"
+            width={80}
+            height={80}
+            alt="Logo"
+          />
+        </Link>
       </div>
-      <div className="flex-none gap-2">
-        <button className="btn btn-circle btn-sm btn-ghost">
-          <i className="fa-solid fa-bell fa-2xl"></i>
+      <div className="flex-none gap-1">
+        {/* Bell */}
+        <button className="btn btn-circle btn-sm btn-ghost hover:bg-transparent">
+          <i className="fa-regular fa-bell fa-xl "></i>
         </button>
-        <button className="btn btn-circle btn-sm btn-ghost">
-          <i className="fa-solid fa-gear fa-2xl"></i>
+        {/* Gear */}
+        <button className="btn btn-circle btn-sm min-h-0 h-6 w-6 btn-ghost hover:bg-transparent ">
+          <i className="fa-solid fa-gear fa-xl active:rotate-90 transition-all duration-300"></i>
         </button>
         <div className="dropdown dropdown-end">
           <div
             tabIndex={0}
             role="button"
-            className="btn btn-ghost btn-circle avatar"
+            className="btn btn-ghost btn-circle avatar hover:bg-transparent"
           >
-            <div className="w-10 rounded-full">
+            <div className="w-8 rounded-full">
               <img
                 alt="Tailwind CSS Navbar component"
                 src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"

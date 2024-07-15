@@ -5,7 +5,7 @@ import Header from "./Header";
 function Drawer({ children }) {
   return (
     <>
-      <div className="drawer ">
+      <div className="drawer">
         <input
           id="my-drawer-3"
           type="checkbox"
