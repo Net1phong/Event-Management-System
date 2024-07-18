@@ -39,7 +39,7 @@ function Drawer({ children }) {
             <div className="flex justify-between items-center px-2">
               <Image src="/LogoWithTitle.svg" width={130} height={130} alt="Logo" />
               <div
-                className="btn btn-circle btn-ghost"
+                className="btn btn-circle btn-ghost hover:bg-primary/50"
                 onClick={toggleDrawer}
               >
                 <i className="fa-solid fa-chevron-left fa-xl"></i>

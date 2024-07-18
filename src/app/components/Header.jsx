@@ -22,7 +22,7 @@ function Header() {
   }, [handleScroll]);
 
   return (
-    <div className={`navbar fixed top-0 inset-x-0 z-[100] transition-colors duration-200 ${backgroundColor ? "bg-white/5 backdrop-blur-sm" : ""}`}>
+    <div className={`navbar fixed top-0 inset-x-0 z-[100] transition-colors duration-200 ${backgroundColor ? "bg-primary/20 backdrop-blur-sm" : ""}`}>
       <div className="flex-1 space-x-2">
         <label
           htmlFor="my-drawer-3"
@@ -63,7 +63,7 @@ function Header() {
               <div className=" grid place-content-center h-full">
                 <div className="flex flex-col items-center">
                   <Image
-                    className="active:scale-95 transition-all duration-150 cursor-pointer"
+                    className="active:scale-95 transition-all duration-75 cursor-pointer"
                     src="/Mascot.svg"
                     width={200}
                     height={200}

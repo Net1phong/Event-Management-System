@@ -10,6 +10,10 @@
 }
 
 @layer components {
+  .select:focus {
+    border-color: transparent;
+    outline: none;
+  }
 }
 
 /* Calendar */
@@ -87,8 +91,8 @@
     }
   }
 
-  .fc-button-primary{
-    @apply rounded-xl; 
+  .fc-button-primary {
+    @apply rounded-xl;
   }
 
   .fc-button-primary:hover {
@@ -103,7 +107,20 @@
     @apply bg-primary/80;
   }
 
-  .fc-highlight{
+  .fc-highlight {
     @apply bg-primary/10;
+  }
+
+  &.fc-v-event {
+    @apply bg-primary/90;
+  }
+
+  .fc-h-event {
+    @apply bg-primary border-none px-1 my-[2px];
+  }
+
+
+  .fc-event {
+    @apply cursor-pointer;
   }
 }
