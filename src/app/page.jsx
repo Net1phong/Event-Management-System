@@ -6,6 +6,7 @@ export default function Home() {
       <Link href="/calendar">
         <i className="fa-solid fa-calendar-days fa-xl"></i>
       </Link>
+      <Link href="/Signin">Signin</Link>
     </>
   );
 }
