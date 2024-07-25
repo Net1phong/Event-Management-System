@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 function pageSignin() {
   return (
@@ -17,23 +18,27 @@ function pageSignin() {
 
             <label className="input rounded-3xl flex items-center py-6 px-6 gap-4 bg-white text-black text-xl">
               <i class="fa-solid fa-lock"></i>
-              <input
-                type="password"
-                className="grow"
-                placeholder="Password"
-              />
+              <input type="password" className="grow" placeholder="Password" />
             </label>
           </form>
 
-          
           <div className="flex items-center justify-between mt-10 px-6">
-            <p className="text-md hover:underline underline-offset-1 flex items-center font-bold">Forget Password ?</p>
-            <button className="btn btn-md bg-primary hover:bg-primary/50 border-none rounded-full text-white w-36 font-bold">Sign In</button>
+            <Link
+              href="/reset-password"
+              className="text-md hover:underline underline-offset-1 flex items-center font-bold"
+            >
+              Forget Password ?
+            </Link>
+            <button className="btn btn-md bg-primary hover:bg-primary/50 border-none rounded-full text-white w-36 font-bold">
+              Sign In
+            </button>
           </div>
 
-          
-          <div className="flex justify-center pt-28"><p className="hover:underline underline-offset-1 flex items-center text-md font-bold">Create Your Account &nbsp;<i class="fa-solid fa-arrow-right"></i></p></div>
-          
+          <div className="flex justify-center pt-28">
+            <Link href="/Signup" className="hover:underline underline-offset-1 flex items-center text-md font-bold">
+              Create Your Account &nbsp;<i class="fa-solid fa-arrow-right"></i>
+            </Link>
+          </div>
 
           <div className="divider pt-8 font-bold">OR</div>
 
