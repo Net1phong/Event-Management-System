@@ -58,7 +58,7 @@ function Drawer({ children }) {
             </li>
             <li onClick={toggleDrawer}>
               {/* ------------- ProjectPage ---------------- */}
-              <Link href="/" className="hover:bg-primary hover:text-white">
+              <Link href="/my-project" className="hover:bg-primary hover:text-white">
                 <span>
                   <i className="fa-regular fa-floppy-disk py-2 mr-4"></i>Project
                 </span>
