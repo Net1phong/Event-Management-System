@@ -9,6 +9,7 @@ export default function Home() {
       </Link>
       <Link href="/signin">Signin</Link>
       <Link href="/landing">fly</Link>
+      <Link href="/borad">mama</Link>
     </>
   );
 }
