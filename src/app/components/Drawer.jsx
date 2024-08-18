@@ -25,7 +25,7 @@ function Drawer({ children }) {
           {/* Header */}
           <Header />
           {/* Content */}
-          <main>{children}</main>
+          {children}
         </div>
         <div className="drawer-side z-[101]">
           <label
@@ -33,11 +33,15 @@ function Drawer({ children }) {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <div className="w-60 py-2 bg-base-200 px-2 min-h-full"></div>
-          <ul className="menu bg-base-200  text-base-content min-h-full w-80 text-xl gap-4  font-bold  pt-5">
+          <ul className="menu bg-base-200 text-base-content min-h-full w-80 text-xl gap-4 font-bold pt-5">
             {/* Arrow */}
             <div className="flex justify-between items-center px-2">
-              <Image src="/LogoWithTitle.svg" width={130} height={130} alt="Logo" />
+              <Image
+                src="/LogoWithTitle.svg"
+                width={130}
+                height={130}
+                alt="Logo"
+              />
               <div
                 className="btn btn-circle btn-ghost hover:bg-primary/50"
                 onClick={toggleDrawer}
@@ -58,7 +62,10 @@ function Drawer({ children }) {
             </li>
             <li onClick={toggleDrawer}>
               {/* ------------- ProjectPage ---------------- */}
-              <Link href="/my-project" className="hover:bg-primary hover:text-white">
+              <Link
+                href="/my-project"
+                className="hover:bg-primary hover:text-white"
+              >
                 <span>
                   <i className="fa-regular fa-floppy-disk py-2 mr-4"></i>Project
                 </span>
@@ -71,7 +78,8 @@ function Drawer({ children }) {
                 className="hover:bg-primary hover:text-white"
               >
                 <span>
-                  <i className="fa-solid fa-calendar-days py-2 mr-4"></i>Calendar
+                  <i className="fa-solid fa-calendar-days py-2 mr-4"></i>
+                  Calendar
                 </span>
               </Link>
             </li>
